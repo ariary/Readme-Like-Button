@@ -7,3 +7,11 @@ body:
     attributes:
       value: |
         Click on `Submit new issue` to validate your like
+  - type: textarea
+    id: useless
+    attributes:
+      label: useless
+      description: Add something useless if you want, you are free
+      placeholder: 🐛
+    validations:
+      required: false
