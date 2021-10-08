@@ -1,0 +1,23 @@
+name: Add Like
+on:
+  issues:
+    types:
+      - opened
+jobs:
+  add-like:
+    if: github.event.label.name == 'like'
+    runs-on: ubuntu-latest
+    name: Parse body of PR
+    steps:
+      - uses: jwalton/gh-find-current-pr@v1
+        id: findPr
+      - name: Parse body
+        id: parsed
+        uses: codetheweb/gh-action-issue-parser@v1
+        with:
+          body: ${{ steps.findPr.outputs.body }}
+      - name: Dump parsed object
+        run: |
+          echo $parsed | jq
+        env:
+          parsed: ${{ steps.parsed.outputs.parsed }}
