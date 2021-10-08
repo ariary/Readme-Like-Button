@@ -2,7 +2,7 @@
 
 <pre>
 <h3>Like me!</h3>
-[<a href="toto">👍</a>]
+[<a href="https://github.com/ariary/Readme-Like-Button/issues/new?assignees=&labels=like&template=like.yml&title=Add+new+like%21">👍</a>]
 
 <hr size=15px color="ff5733" width=70%>
 
