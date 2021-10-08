@@ -5,9 +5,11 @@ on:
       - labeled
 jobs:
   add-like:
+    env:
+      author: ${{github.event.issue.user.login}}
     if: github.event.label.name == 'like'
     runs-on: ubuntu-latest
-    name: Commit&push like
+    name: commit and push like
     steps:
     - uses: actions/checkout@master
       with:
@@ -15,7 +17,12 @@ jobs:
         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
     - name: Create local changes
       run: |
-        echo "new_liker" >> likers.txt
+        if grep -Fxq "$FILENAME" likers.txt
+        then
+        ;
+        else
+        echo "$author" >> likers.txt
+        fi
     - name: Commit & Push changes
       uses: actions-js/push@master
       with:
