@@ -1,0 +1,9 @@
+name: Like
+description: Add a like
+title: "Add new like!"
+labels: ["like"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Click on `Submit new issue` to validate your like
