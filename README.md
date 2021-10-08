@@ -3,6 +3,7 @@
 <pre>
 <h3>Like me!</h3>
 [<a href="https://github.com/ariary/Readme-Like-Button/issues/new?assignees=&labels=like&template=like.yml&title=Add+new+like%21">👍</a>]
+<b><i>Like counter: 0</i><b>
 </pre>
 </div>
 
