@@ -2,9 +2,10 @@ name: Add Like
 on:
   issues:
     types:
-      - opened
+      - labeled
 jobs:
   add-like:
+    if: github.event.label.name == 'like'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
