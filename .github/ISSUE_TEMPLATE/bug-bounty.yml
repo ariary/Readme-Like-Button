@@ -16,7 +16,7 @@ body:
     validations:
       required: true
   - type: input
-    id: name
+    id: yoyo
     attributes:
       label: template name
       description: The name of you template. It will be prefixed by your github username
