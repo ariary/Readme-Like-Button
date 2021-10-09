@@ -19,7 +19,7 @@ jobs:
       run: |
         FIND=$(grep -Fx "$author" likers.txt)
         #if grep -Fxq "$author" likers.txt
-        if [! -z "$FIND"] 
+        if [[! -z "$FIND"]] 
         then
         echo "Try again!"
         else
