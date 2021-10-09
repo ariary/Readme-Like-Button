@@ -29,3 +29,28 @@ jobs:
       uses: actions-js/push@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+  add-mutable-like:
+    env:
+      author: ${{github.event.issue.user.login}}
+    if: github.event.label.name == 'like-mutable'
+    runs-on: ubuntu-latest
+    name: commit and push mutable like
+    steps:
+    - uses: actions/checkout@master
+      with:
+        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+    - name: Create local changes
+      run: |
+        if grep -Fxq "$author" likers-mutable.txt
+        then
+        echo "Try again!"
+        else
+        echo "$author" >> likers-mutable.txt
+        #and update counter
+        LIKES=$(wc -l < likers-mutable.txt);REPLACE=$(echo "<b><i>Like counter: ${LIKES}</i><b>");(head -12 README.md; echo "$REPLACE"; tail -n +14 README.md) > foobar && mv foobar README.md
+        fi
+    - name: Commit & Push changes
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}    
