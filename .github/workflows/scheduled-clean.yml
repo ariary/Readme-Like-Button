@@ -5,7 +5,7 @@ on:
     - cron: '0 0 * * 0' # Sunday at midnight
   workflow_dispatch:
 jobs:
-  close-issues: #close issue after 1 day
+  close-issues: #close issue after 1 day of inactivity
     runs-on: ubuntu-latest
     permissions:
       issues: write
@@ -15,9 +15,9 @@ jobs:
         with:
           days-before-issue-stale: -1          
           days-before-issue-close: 1
-          stale-issue-label: "like"
+          stale-issue-label: "like" #useless i think
           close-issue-message: "This issue was closed for cleaning purpose"
           days-before-pr-stale: -1
           days-before-pr-close: -1
-          any-of-labels: "like" #add labels here to remove other issue types
+          any-of-labels: "like,unlike,like-mutables" #add labels here to remove other issue types
           repo-token: ${{ secrets.GITHUB_TOKEN }}
