@@ -1,4 +1,4 @@
-name: Like
+name: Mutable like
 description: Add a like
 title: "Add new like! (mutable)"
 labels: ["like-mutable"]
