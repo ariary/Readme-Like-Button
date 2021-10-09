@@ -67,7 +67,7 @@ jobs:
         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
     - name: Create local changes
       run: |
-        LINE=$(grep -Fx "$author" likers-mutable.txt -n)
+        LINE=$(grep -Fx "$author" likers-mutable.txt -n| cut -d ":" -f 1)
         if [-z "$LINE"]
         then
         echo "Try again! You haven't already liked"
