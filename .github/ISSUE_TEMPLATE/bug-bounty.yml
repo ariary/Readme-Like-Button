@@ -27,3 +27,10 @@ body:
         - withdraw your like
     validations:
       required: true
+  - type: textarea
+    id: Steps to Reproduce
+    attributes:
+      label: Steps
+      description: Describe step to reproduce the bug
+    validations:
+      required: true
