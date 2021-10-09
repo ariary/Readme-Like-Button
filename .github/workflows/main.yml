@@ -1,0 +1,36 @@
+name: clean like issues
+
+on: 
+  schedule:
+    #- cron: '0 0 * * 0' # Sunday at midnight
+    - cron: '*/20 * * * *' #every 20 minutes for test purposes
+jobs:
+  close-issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/stale@v3
+        with:
+          days-before-issue-close: 1
+          stale-issue-label: "like"
+          close-issue-message: "This issue was closed for cleaning purpose"
+          days-before-pr-stale: -1
+          days-before-pr-close: -1
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8 #install the python needed
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      # Execute script at certain time
+      - name: execute py script # run the run.py to get the latest data
+        run: |
+          python python/kyc_failure_from_bq_to_gcs.py
+        env:
+          SOME_SECRETS: (...)
