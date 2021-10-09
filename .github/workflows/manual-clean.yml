@@ -1,0 +1,19 @@
+name: Manual issue cleaning
+on:
+  workflow_dispatch:
+
+jobs:
+  close-issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/stale@v3
+        with:
+          days-before-issue-close: 1
+          stale-issue-label: "like"
+          close-issue-message: "This issue was closed for cleaning purpose"
+          days-before-pr-stale: -1
+          days-before-pr-close: -1
+          repo-token: ${{ secrets.GITHUB_TOKEN }
