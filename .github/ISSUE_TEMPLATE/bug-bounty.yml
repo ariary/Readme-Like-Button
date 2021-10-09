@@ -26,3 +26,11 @@ body:
       description: Describe step to reproduce the bug
     validations:
       required: true
+  - type: checkboxes
+    id: confidential
+    attributes:
+      label: Confidential issue
+      description: confidential issue
+      options:
+        - label: "toto"
+          required: false
