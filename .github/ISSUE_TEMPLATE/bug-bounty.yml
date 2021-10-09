@@ -15,11 +15,15 @@ body:
       placeholder: ex. awesome-web-bug-bounty-report
     validations:
       required: true
-  - type: input
-    id: yoyo
+  - type: droptown
+    id: bug-type
     attributes:
-      label: template name
-      description: The name of you template. It will be prefixed by your github username
-      placeholder: ex. awesome-web-bug-bounty-report
+      label: bug type
+      multiple: false
+      options:
+        - proposal for a "private" like
+        - double-like
+        - withdraw someone else like
+        - withdraw your like
     validations:
       required: true
