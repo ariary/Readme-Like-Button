@@ -30,7 +30,6 @@ body:
     id: confidential
     attributes:
       label: Confidential issue
-      description: confidential issue
       options:
-        - label: "toto"
+        - label: "in fact, it won't change anything. it's a little troll because github does not allow confidential issues (and certainly will not allow it)"
           required: false
