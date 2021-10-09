@@ -1,4 +1,4 @@
-name: Like
+name: Unlike
 description: Withdraw my like
 title: "I want to Unlike!"
 labels: ["unlike-mutable"]
