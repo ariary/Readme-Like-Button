@@ -10,7 +10,7 @@
 <h3>Like me, and unlike me!</h3>
 [<a href="https://github.com/ariary/Readme-Like-Button/issues/new?assignees=&labels=like-mutable&template=like-mutable.yaml&title=Add+new+like%21+%28mutable%29">👍</a>]
 [<a href="https://github.com/ariary/Readme-Like-Button/issues/new?assignees=&labels=unlike-mutable&template=unlike-mutable.yml&title=I+want+to+Unlike%21">👎</a>]
-<b><i>Like counter: 1</i><b>
+<b><i>Like counter: 0</i><b>
 </pre>
 </div>
 
