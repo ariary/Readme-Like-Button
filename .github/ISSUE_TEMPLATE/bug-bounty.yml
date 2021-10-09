@@ -28,9 +28,9 @@ body:
     validations:
       required: true
   - type: textarea
-    id: Steps to Reproduce
+    id: Steps-to-Reproduce
     attributes:
-      label: Steps
+      label: Steps to Reproduce
       description: Describe step to reproduce the bug
     validations:
       required: true
