@@ -15,3 +15,31 @@ body:
       placeholder: ex. awesome-web-bug-bounty-report
     validations:
       required: true
+  - type: dropdown
+    id: bug type
+    attributes:
+      label: bug type
+      multiple: false
+      options:
+        - proposal for a "private" like button
+        - double-like
+        - withdraw someone else like
+        - withdraw my like
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: Steps to Reproduce
+    attributes:
+      label: Steps
+      description: Describe step to reproduce the bug
+    validations:
+      required: true
+ - type: checkboxes
+    id: confidential
+    attributes:
+      label: Confidential issue
+      description: Confidential issue
+      options:
+        - label: in fact, it won't change anything. it's a little troll because github does not allow confidential issues (and certainly will not allow it)
+          required: false
