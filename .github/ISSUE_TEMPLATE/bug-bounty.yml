@@ -15,7 +15,7 @@ body:
       placeholder: ex. awesome-web-bug-bounty-report
     validations:
       required: true
-  - type: droptown
+  - type: dropdown
     id: bug-type
     attributes:
       label: bug type
