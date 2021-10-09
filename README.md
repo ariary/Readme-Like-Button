@@ -13,6 +13,7 @@
 <b><i>Like counter: 0</i></b>
 </pre>
 </div>
+
 ## Bug bounty 
 
 Sorry for the clickbait title, but no money will be provided for contibutors. 🐛 
