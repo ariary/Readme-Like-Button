@@ -15,7 +15,7 @@ body:
       placeholder: ex. awesome-web-bug-bounty-report
     validations:
       required: true
-  - type: dropdown
+   - type: dropdown
     id: bug type
     attributes:
       label: bug type
@@ -35,11 +35,12 @@ body:
       description: Describe step to reproduce the bug
     validations:
       required: true
- - type: checkboxes
-    id: confidential
-    attributes:
-      label: Confidential issue
-      description: Confidential issue
-      options:
-        - label: in fact, it won't change anything. it's a little troll because github does not allow confidential issues (and certainly will not allow it)
-          required: false
+   - type: checkboxes
+      id: confidential
+      attributes:
+        label: Confidential issue
+        description: Confidential issue
+        options:
+          - label: in fact, it won't change anything. it's a little troll because github does not allow confidential issues (and certainly will not allow it)
+            required: false
+
