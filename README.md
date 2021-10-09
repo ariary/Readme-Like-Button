@@ -7,11 +7,11 @@
 </pre>
 </div>
 
-<!--<hr size=15px color="ff5733" width=70%>-->
+<hr size=15px color="ff5733" width=70%>
 
-<!--<h3>Like me, and dislike me!</h3>-->
-<!--[<a href="toto">👍</a>]-->
-<!--[<a href="toto">👎</a>]-->
+<h3>Like me, and unlike me!</h3>
+[<a href="https://github.com/ariary/Readme-Like-Button/issues/new?assignees=&labels=like-mutable&template=like-mutable.yaml&title=Add+new+like%21+%28mutable%29">👍</a>]
+[<a href="https://github.com/ariary/Readme-Like-Button/issues/new?assignees=&labels=unlike-mutable&template=unlike-mutable.yml&title=I+want+to+Unlike%21">👎</a>]
 
 ## Bug bounty 
 
