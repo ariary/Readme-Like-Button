@@ -26,3 +26,4 @@ Please, let us know if:
 * you find a way to withdraw your like <!--(when dislike is not implemented)-->
 * anything you think that could be relevant
 
+Report [here](https://github.com/ariary/Readme-Like-Button/issues/new?assignees=&labels=bug-bounty&template=bug-bounty.yml&title=%5BBug+Bounty%5D%3A+)
