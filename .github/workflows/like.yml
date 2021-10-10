@@ -25,7 +25,7 @@ jobs:
         else
         echo "$author" >> likers.txt
         #and update counter
-        LIKES=$(wc -l < likers.txt);REPLACE=$(echo "<sub><b><i>Like counter: ${LIKES}</i></b></sub>");(head -5 README.md; echo "$REPLACE"; tail -n +7 README.md) > foobar && mv foobar README.md
+        LIKES=$(wc -l < likers.txt);REPLACE=$(echo "<sub><b><i>Like counter: ${LIKES}</i></b></sub>");(head -9 README.md; echo "$REPLACE"; tail -n +11 README.md) > foobar && mv foobar README.md
         fi
     - name: Commit & Push changes
       uses: actions-js/push@master
