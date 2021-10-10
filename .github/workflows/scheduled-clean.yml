@@ -19,5 +19,5 @@ jobs:
           close-issue-message: "This issue was closed for cleaning purpose"
           days-before-pr-stale: -1
           days-before-pr-close: -1
-          any-of-labels: "like,unlike,like-mutables" #add labels here to remove other issue types
+          any-of-labels: "like,unlike-mutable,like-mutables" #add labels here to remove other issue types
           repo-token: ${{ secrets.GITHUB_TOKEN }}
