@@ -1,17 +1,26 @@
 <div align=center>
 
-<pre>
-<h3>Like me!</h3>
+<table>
+<tr>
+<td>
+Like me!
+
 [<a href="https://github.com/ariary/Readme-Like-Button/issues/new?assignees=&labels=like&template=like.yml&title=Add+new+like%21">👍</a>]
-<b><i>Like counter: 2</i></b>
+
+<sub><b><i>Like counter: 2</i></b></sub>
 
 <hr size=15px color="ff5733" width=70%>
 
-<h3>Like me, and unlike me!</h3>
+Like me, and unlike me!
+
 [<a href="https://github.com/ariary/Readme-Like-Button/issues/new?assignees=&labels=like-mutable&template=like-mutable.yaml&title=Add+new+like%21+%28mutable%29">👍</a>]
 [<a href="https://github.com/ariary/Readme-Like-Button/issues/new?assignees=&labels=unlike-mutable&template=unlike-mutable.yml&title=I+want+to+Unlike%21">👎</a>]
-<b><i>Like counter: 1</i></b>
-</pre>
+
+<sub><b><i>Like counter: 1</i></b></sub>
+
+</td>
+</tr>
+</table>
 </div>
 
 ## Bug bounty 
