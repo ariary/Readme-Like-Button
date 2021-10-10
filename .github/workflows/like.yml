@@ -25,7 +25,7 @@ jobs:
         else
         echo "$author" >> likers.txt
         #and update counter
-        LIKES=$(wc -l < likers.txt);REPLACE=$(echo "<b><i>Like counter: ${LIKES}</i></b>");(head -5 README.md; echo "$REPLACE"; tail -n +7 README.md) > foobar && mv foobar README.md
+        LIKES=$(wc -l < likers.txt);REPLACE=$(echo "<sub><b><i>Like counter: ${LIKES}</i></b></sub>");(head -5 README.md; echo "$REPLACE"; tail -n +7 README.md) > foobar && mv foobar README.md
         fi
     - name: Commit & Push changes
       uses: actions-js/push@master
@@ -50,7 +50,7 @@ jobs:
         else
         echo "$author" >> likers-mutable.txt
         #and update counter
-        LIKES=$(wc -l < likers-mutable.txt);REPLACE=$(echo "<b><i>Like counter: ${LIKES}</i></b>");(head -12 README.md; echo "$REPLACE"; tail -n +14 README.md) > foobar && mv foobar README.md
+        LIKES=$(wc -l < likers-mutable.txt);REPLACE=$(echo "<sub><b><i>Like counter: ${LIKES}</i></b></sub>");(head -12 README.md; echo "$REPLACE"; tail -n +14 README.md) > foobar && mv foobar README.md
         fi
     - name: Commit & Push changes
       uses: actions-js/push@master
@@ -77,7 +77,7 @@ jobs:
         #withdraw like
         sed -i "${LINE}d" likers-mutable.txt
         #and update counter
-        LIKES=$(wc -l < likers-mutable.txt);REPLACE=$(echo "<b><i>Like counter: ${LIKES}</i></b>");(head -12 README.md; echo "$REPLACE"; tail -n +14 README.md) > foobar && mv foobar README.md
+        LIKES=$(wc -l < likers-mutable.txt);REPLACE=$(echo "<sub><b><i>Like counter: ${LIKES}</i></b></sub>");(head -12 README.md; echo "$REPLACE"; tail -n +14 README.md) > foobar && mv foobar README.md
         fi
     - name: Commit & Push changes unlike
       uses: actions-js/push@master
