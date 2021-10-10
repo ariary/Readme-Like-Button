@@ -69,16 +69,12 @@ jobs:
         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
     - name: Create local changes
       run: |
-        LINE=$(grep -Fx "$author" likers-mutable.txt -n| cut -d ":" -f 1)
-        echo $LINE
-        if [[-z "$LINE"]]
+        LINE=$(grep -Fx "ariary" likers-mutable.txt -n| cut -d ":" -f 1)
+        if [ -z "$LINE" ]
         then
         echo "Try again! You haven't already liked"
         else
         #withdraw like
-        #start=$(($LINE-1))
-        #offset=$(($LINE+2))
-        #(head -${START} likers-mutable.txt; tail -n +${offset} likers-mutable.txt) > foobar && mv foobar likers-mutable.txt
         sed -i "${LINE}d" likers-mutable.txt
         #and update counter
         LIKES=$(wc -l < likers-mutable.txt);REPLACE=$(echo "<b><i>Like counter: ${LIKES}</i></b>");(head -12 README.md; echo "$REPLACE"; tail -n +14 README.md) > foobar && mv foobar README.md
