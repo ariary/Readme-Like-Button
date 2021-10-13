@@ -33,7 +33,7 @@ Please, let us know if:
 * you have a proposal for a "private" like button (ie we can't see who has already liked)
 * you find a way to double like
 * you find a way to withdraw someone else like
-* you find a way to withdraw your like <!--(when dislike is not implemented)-->
+* you find a way to withdraw your like (when dislike is not implemented)
 * anything you think that could be relevant
 
 Report [here](https://github.com/ariary/Readme-Like-Button/issues/new?assignees=&labels=bug-bounty&template=bug-bounty.yml&title=%5BBug+Bounty%5D%3A+)
