@@ -81,3 +81,4 @@ reevelobo
 arxifythedev
 AwesomeKalin
 JasonLandbridge
+devizer
