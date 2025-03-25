@@ -7,7 +7,7 @@ Like me!
 
 [<a href="https://github.com/ariary/Readme-Like-Button/issues/new?assignees=&labels=like&template=like.yml&title=Add+new+like%21">👍</a>]
 
-<sub><b><i>Like counter: 96</i></b></sub>
+<sub><b><i>Like counter: 97</i></b></sub>
 
 <hr size=15px color="ff5733" width=70%>
 
