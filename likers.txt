@@ -108,3 +108,4 @@ RipeStore
 educsis
 polylogue2
 stherold
+ModuleMaster64
